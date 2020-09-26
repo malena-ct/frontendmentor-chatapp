@@ -1,0 +1,190 @@
+.phone-wrapper{
+    width: 250px;
+    height: 550px;
+    background-color: white;
+    margin: 50px auto;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    flex-shrink: 0;
+    .app-header{
+        background: $header-gradient;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 30px 15px 10px 15px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        i{
+            font-size: 10px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 20px;
+            background-color: white;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    .app-body{
+        background-color: $app-background;
+        border-radius: 35px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: relative;
+        height: 100%;
+    }
+
+    .chat-wrapper{
+        padding: 10px;
+    }
+    
+    .left{
+        margin-right: 35%;
+    }
+    
+    .right{
+        text-align: right;
+        margin-left: 35%;
+    }
+    
+    .bubble{
+        border-radius: 15px;
+        margin-bottom: 10px;
+        font-size: .6em;
+        line-height: 1.25em;
+        padding: 10px;
+        display: inline-block;
+        &.sent{
+            background-color: $sent-bubble-background;
+            color: $text-sent;
+            width: auto;
+            border-bottom-right-radius: 2px;
+            text-align: left;
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+        }
+        &.received{
+            background-color: $received-bubble-background;
+            border-bottom-left-radius: 2px;
+            color: $text-received;
+        }
+        &.price{
+            background: $bubble-gradient;
+            color: white;
+            width: 100%;
+            border-radius: 10px;
+            border-bottom-left-radius: 2px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .radio{
+                border: 1px solid rgba($color: #ffff, $alpha: 0.5);
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                margin-right: 10px;
+            }
+            .time{
+                display: flex;
+                align-items: center;
+                font-size: .8em;
+            }
+            .cost{
+                text-align: right;
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    .message-box{
+        position: relative;
+        bottom: 5px;
+        background-color: white;
+        border-radius: 30px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        align-items: center;
+        .label{
+            font-size: .6em;
+            color: $placeholder-text;
+            align-self: center;
+            margin-left: 10px;
+        }
+        .send-btn{
+            background-color: $btn-color;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+            i{
+                display: block;
+                color: white;
+                font-size: .6em;
+            }
+        }
+    }
+
+    .user-details{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    .info-wrapper{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-left: 10px;
+        .user-name{
+            font-size: .7em;
+            margin-bottom: 3px;
+        }
+        .user-status{
+            font-size: .5em;
+            font-weight: 400;
+        }
+    }
+
+    .user-photo{
+        img{
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+    }
+
+    .img-bubble{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        .img-preview{
+            width: 45px;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.phone{
+    @media (min-width: 768px){
+        // width: 60%;
+    }
+}

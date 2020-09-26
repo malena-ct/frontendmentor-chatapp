@@ -1,0 +1,36 @@
+.violet-bg{
+    position: absolute;
+    width: 410px;
+    height: 600px;
+    background: $violet-background;
+    border-bottom-left-radius: 240px;
+    border-bottom-right-radius: 265px;
+    margin-top: -10px;
+    z-index: -1000;
+    left: -215px;
+    @media (min-width: 768px){
+        left: -45px;
+    }
+    @media (min-width: 1441px){
+        left: -10px;
+    }
+}
+
+.pink-bg{
+    position: absolute;
+    width: 410px;
+    height: 600px;
+    background: $received-bubble-background;
+    border-top-right-radius: 240px;
+    border-top-left-radius: 265px;
+    margin-bottom: -20px;
+    z-index: -1001;
+    right: -205px;
+    bottom: -40px;
+    @media (min-width: 768px){
+        right: -55px;
+    }
+    @media (min-width: 1441px){
+        right: -15px;
+    }
+}
