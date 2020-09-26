@@ -209,6 +209,7 @@ section {
 }
 .phone-wrapper .user-photo img {
   height: 30px;
+  width: 30px;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -219,6 +220,7 @@ section {
 }
 .phone-wrapper .img-bubble .img-preview {
   width: 45px;
+  height: 45px;
   border-radius: 15px;
   margin-left: 10px;
 }
